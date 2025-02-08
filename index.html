@@ -28,38 +28,26 @@
       height: 100%;
       overflow: auto;
       background-color: rgba(0, 0, 0, 0.5); /* 背景を半透明に */
+
     }
 
     .modal-content {
-      background-color: #fff;
+      background-color: #fcfcfc;
       margin: 15% auto;
       padding: 20px;
       border: 1px solid #888;
       width: 80%;
       text-align: center;
+      border-radius: 20px;
     }
 
-    .close {
-      color: #aaa;
-      float: right;
-      font-size: 28px;
-      font-weight: bold;
-    }
-
-    .close:hover,
-    .close:focus {
-      color: black;
-      text-decoration: none;
-      cursor: pointer;
-    }
   </style>
 </head>
 <body>
   <!-- モーダルの内容 -->
   <div id="myModal" class="modal">
     <div class="modal-content">
-      <span class="close">&times;</span>
-      <p>リンク先に移動しますか？</p>
+      <h2>210o.netに移動できます</h2>
       <a href="https://210o.net" target="_blank">移動する</a>
     </div>
   </div>
@@ -74,11 +62,6 @@
     // 画像がクリックされたときにモーダルを表示
     document.body.onclick = function() {
       modal.style.display = "block";
-    }
-
-    // <span> (x) がクリックされたときにモーダルを閉じる
-    span.onclick = function() {
-      modal.style.display = "none";
     }
 
     // モーダルの外側がクリックされたときにモーダルを閉じる
